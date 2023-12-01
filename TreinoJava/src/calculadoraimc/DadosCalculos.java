@@ -22,17 +22,17 @@ public class DadosCalculos {
 
 	public static String avaliarCategoriaIMC(double novoIMC) {
 		if (novoIMC < 18.5) {
-			return "Classificação: Magreza";
-		} else if (novoIMC < 25) {
-			return "Classificação: Peso normal";
-		} else if (novoIMC < 30) {
-			return "Classificação: Sobrepeso";
-		} else if (novoIMC < 35) {
-			return "Classificação: Obesidade grau I";
-		} else if (novoIMC < 40) {
-			return "Classificação: Obesidade grau II";
+			return "Seu IMC é 18.5 então sua classificação é de: Magreza";
+		} else if (novoIMC > 18.5 && novoIMC < 25 ) {
+			return "Seu IMC é 25.0 então sua classificação é de: Peso normal";
+		} else if (novoIMC > 25 && novoIMC < 30) {
+			return "Seu IMC é 30.0 então sua classificação é de: Sobrepeso";
+		} else if (novoIMC > 30 &&novoIMC < 35) {
+			return "Seu IMC é 35.0 então sua classificação é de: Obesidade grau I";
+		} else if (novoIMC > 35 && novoIMC < 40) {
+			return "Seu IMC é 40.0 então sua classificação é de: Obesidade grau II";
 		} else {
-			return "Classificação: Obesidade grau II";
+			return "Seu IMC é maior que 40.0 então sua classificação é de: Obesidade grau III";
 		}
 
 	}
