@@ -4,6 +4,7 @@ public class DadosCalculos {
 	private double altura;
 	private double peso;
 
+	// tentar divididir esse arquivo em outros dois no proximo projeto
 	public void setaltura(double Novoaltura) {
 		this.altura = Novoaltura;
 	}
@@ -34,6 +35,5 @@ public class DadosCalculos {
 		} else {
 			return "Seu IMC é maior que 40.0 então sua classificação é de: Obesidade grau III";
 		}
-
 	}
 }
