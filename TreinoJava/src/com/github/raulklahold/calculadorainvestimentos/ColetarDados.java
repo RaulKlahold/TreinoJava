@@ -36,6 +36,7 @@ public class ColetarDados {
 	public static String avaliarinvestimento(String novoCapital) {
 	return novoCapital;	
 }
+	
 }
 
 

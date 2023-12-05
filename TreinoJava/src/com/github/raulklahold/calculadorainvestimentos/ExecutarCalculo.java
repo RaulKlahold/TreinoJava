@@ -14,6 +14,7 @@ public class ExecutarCalculo {
 	        double novoCapital = capitalAtual * Math.pow((1 + jurosAm), mesesInvestidos);
 	        ColetarDados.setcapital(novoCapital);
 	        ColetarDados.setmesesInvestidos(mesesInvestidos + 1);
+	        System.out.println("mensagem de teste da nova branch");
 	    }
 
 	
