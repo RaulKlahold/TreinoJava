@@ -2,6 +2,7 @@ package com.github.raulklahold.calculadorainvestimentos;
 
 public class ColetarDados {
 
+
 	private double capital;
 	private double jurosAm;
 	private double mesesInvestidos;
