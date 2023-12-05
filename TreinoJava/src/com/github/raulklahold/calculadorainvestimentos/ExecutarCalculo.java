@@ -9,12 +9,13 @@ public class ExecutarCalculo {
 	      
 	    	double capitalAtual = ColetarDados.getcapital();
 	        double jurosAm = ColetarDados.getjurosAm();
-	        double mesesInvestidos = ColetarDados.getmesesInvestidos();
+	        int mesesInvestidos = ColetarDados.getmesesInvestidos();
 	        
-	        double novoCapital = capitalAtual * Math.pow((1 + jurosAm), mesesInvestidos);
-	        ColetarDados.setcapital(novoCapital);
-	        ColetarDados.setmesesInvestidos(mesesInvestidos + 1);
-	        System.out.println("mensagem de teste da nova branch");
+	        @SuppressWarnings("unused")
+			double novoCapital = capitalAtual * Math.pow((1 + jurosAm), mesesInvestidos);
+	        
+	        
+	        
 	    }
 
 	
