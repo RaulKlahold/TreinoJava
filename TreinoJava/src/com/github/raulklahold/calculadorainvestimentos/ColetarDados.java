@@ -29,9 +29,14 @@ public class ColetarDados {
 	public void setmesesInvestidos(double novoMesInvestido) {
 		this.mesesInvestidos = novoMesInvestido;
 	}
-	public double getnovoCapital() {
+	public double getnovoCapital(){
 	 return capital * Math.pow((1 + jurosAm), mesesInvestidos);
 	}
-	public static String avaliarinvestimento(double novoIMC)
+	
+	public static String avaliarinvestimento(String novoCapital) {
+	return novoCapital;	
 }
-// tirar os getters desnecessarios, olhar o outro modelo como referencia calculadora IMC
+}
+
+
+
