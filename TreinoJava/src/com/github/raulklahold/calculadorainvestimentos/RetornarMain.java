@@ -1,5 +1,6 @@
 package com.github.raulklahold.calculadorainvestimentos;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class RetornarMain {
@@ -19,18 +20,21 @@ public class RetornarMain {
 		investimento.setjurosAm(taxaAm);
 		
 		System.out.print("Digite a quantidade de meses que o capital irá render: ");
-        double quantidadeMes = scanner.nextDouble();
-		investimento.setmesesInvestidos(quantidadeMes);
+        int quantidadeMes = scanner.nextInt();
+		investimento.setMesesInvestidos(quantidadeMes);
 		scanner.close();
 		
-		double novoCapital = investimento.getcapital();
+		double novoCapital = ExecutarCalculo.realizarInvestimento(investimento);
+		
+		DecimalFormat df = new DecimalFormat("#.00");
+        String novoCapitalFormatado = df.format(novoCapital);
+		
 		System.out.println("Seu capital investido a: " + investimento.getcapital());
 		System.out.println("Sob uma taxa de: "+investimento.getjurosAm());
-		System.out.println("ira render: "+ novoCapital);
+		System.out.println("ira render: "+ novoCapitalFormatado);
 		
 		
-		System.out.println("mensagem de teste da nova branch");
-	
+		
 	}
 
 }

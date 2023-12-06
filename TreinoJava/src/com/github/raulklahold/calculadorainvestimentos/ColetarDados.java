@@ -5,7 +5,40 @@ public class ColetarDados {
 
 	private double capital;
 	private double jurosAm;
-	private double mesesInvestidos;
+	private int mesesInvestidos;
+	private ExecutarCalculo novoCapital;
+
+	public double getCapital() {
+		return capital;
+	}
+
+	public void setCapital(double capital) {
+		this.capital = capital;
+	}
+
+	public double getJurosAm() {
+		return jurosAm;
+	}
+
+	public void setJurosAm(double jurosAm) {
+		this.jurosAm = jurosAm;
+	}
+
+	public int getMesesInvestidos() {
+		return mesesInvestidos;
+	}
+
+	public void setMesesInvestidos(int mesesInvestidos) {
+		this.mesesInvestidos = mesesInvestidos;
+	}
+
+	public ExecutarCalculo getNovoCapital() {
+		return novoCapital;
+	}
+
+	public void setNovoCapital(ExecutarCalculo novoCapital) {
+		this.novoCapital = novoCapital;
+	}
 
 	public double getcapital() {
 		return capital;
@@ -23,20 +56,15 @@ public class ColetarDados {
 		this.jurosAm = novoJuros;
 	}
 
-	public double getmesesInvestidos() {
+	public int getmesesInvestidos() {
 		return mesesInvestidos;
 	}
 
-	public void setmesesInvestidos(double novoMesInvestido) {
-		this.mesesInvestidos = novoMesInvestido;
-	}
-	public double getnovoCapital(){
-	 return capital * Math.pow((1 + jurosAm), mesesInvestidos);
+	public void setmesesInvestidos(int quantidadeMes) {
+		this.mesesInvestidos = quantidadeMes;
 	}
 	
-	public static String avaliarinvestimento(String novoCapital) {
-	return novoCapital;	
-}
+	
 	
 }
 
