@@ -3,24 +3,15 @@ package com.github.raulklahold.calculadorainvestimentos;
 
 public class ExecutarCalculo {
 
-	public class ManipuladorInvestimento {
+	public static double realizarInvestimento(ColetarDados coletarDados) {
+        double capitalAtual = coletarDados.getCapital();
+        double jurosAm = coletarDados.getJurosAm();
+        double mesesInvestidos = coletarDados.getMesesInvestidos();
 
-	    public static void realizarInvestimento(ColetarDados ColetarDados) {
-	      
-	    	double capitalAtual = ColetarDados.getcapital();
-	        double jurosAm = ColetarDados.getjurosAm();
-	        int mesesInvestidos = ColetarDados.getmesesInvestidos();
-	        
-	        @SuppressWarnings("unused")
-			double novoCapital = capitalAtual * Math.pow((1 + jurosAm), mesesInvestidos);
+        return capitalAtual * Math.pow((1 + jurosAm), mesesInvestidos);
+    }
 	        
 	        
 	        
-	    }
+	   }
 
-	
-	
-	
-	 
-	}
-}

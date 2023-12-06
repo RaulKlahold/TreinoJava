@@ -23,7 +23,7 @@ public class ColetarDados {
 		this.jurosAm = jurosAm;
 	}
 
-	public double getMesesInvestidos() {
+	public int getMesesInvestidos() {
 		return mesesInvestidos;
 	}
 
