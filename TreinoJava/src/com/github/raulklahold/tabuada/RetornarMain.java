@@ -30,7 +30,7 @@ public class RetornarMain {
 			System.out.println("Irá resultar no valor: "+novoCapitalFormatado);
 			
 		} catch (ArithmeticException e) {
-		    System.out.println("Erro ao realizar cálculo: divisão por zero.");
+		    System.out.println("Erro ao realizar cálculo: não é possivel divisão por zero.");
 		} catch (NumberFormatException e) {
 		    System.out.println("Por favor, insira um número válido.");
 		} catch (Exception e) {
