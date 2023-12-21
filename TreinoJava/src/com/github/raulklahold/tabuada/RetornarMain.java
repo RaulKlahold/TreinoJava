@@ -34,7 +34,7 @@ public class RetornarMain {
 		} catch (NumberFormatException e) {
 		    System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
 		} catch (Exception e) {
-		    System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
+		    System.out.println("Erro ao realizar cálculo: Ocorreu um erro inesperado " + e.getMessage());
 		}
 
 
