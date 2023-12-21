@@ -37,7 +37,7 @@ public class RetornarMain {
 			
 		    System.out.println("Erro ao realizar cálculo: não é possivel divisão por zero.");
 		} catch (NumberFormatException e) {
-		    System.out.println("Por favor, insira um número válido.");
+		    System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
 		} catch (Exception e) {
 		    System.out.println("Ocorreu um erro inesperado: " + e.getMessage());
 		}
