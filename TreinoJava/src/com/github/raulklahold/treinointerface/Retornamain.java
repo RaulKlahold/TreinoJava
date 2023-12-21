@@ -1,5 +1,7 @@
 package com.github.raulklahold.treinointerface;
 
+import java.util.Scanner;
+
 public class Retornamain {
 
 	public static void main(String[] args) {
@@ -8,6 +10,7 @@ public class Retornamain {
         	ClassificarAves ave = new ClassificarAves(null);
     		ClassificarMamifero mamifero = new ClassificarMamifero(null);
     		ClassificarRepiteis Reptil = new ClassificarRepiteis(null);
+    		
     		
     		System.out.println("Essa é a classificação e suas habilidades: ");
     		
