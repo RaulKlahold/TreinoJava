@@ -21,9 +21,8 @@ public class RetornaMain {
 		cliente.setPedido(pedido);
 		Scan.close();
 
-		String novopedido = Executarfuncao.Pedidoslist(cliente);
-		System.out.println("\n Muito obrigado pela preferência...\nseu pedido foi o combo:\n"+novopedido );
-
+		Executarfuncao.Pedidoslist(cliente);
+		System.out.println("\n Obrigado pela Preferência!");
 	}
 
 }
