@@ -27,7 +27,7 @@ public class Executarfuncao {
     	 System.out.println("\nNome: " + nome+"\n");
          System.out.println("\nCPF: " + CPF+"\n");
          System.out.println("Pedido escolhido: " + pedido+"\n");
-         System.out.println("Pedido N°1  \n XEgg duplo com fritas \n Lata Sprite Brind\n ");
+         System.out.println("Pedido N°3  \n XEgg duplo com fritas \n Lata Sprite Brind\n ");
          break;
      default:
     	 
