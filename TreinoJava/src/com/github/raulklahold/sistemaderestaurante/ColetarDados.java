@@ -3,13 +3,13 @@ package com.github.raulklahold.sistemaderestaurante;
 public class ColetarDados {
 	private String nome;
 	private String cpf;
-	private char pedido;
+	private String pedido;
 
-	public char getPedido() {
+	public String getPedido() {
 		return pedido;
 	}
 
-	public void setPedido(char pedido) {
+	public void setPedido(String pedido) {
 		this.pedido = pedido;
 	}
 
