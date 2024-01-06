@@ -14,21 +14,21 @@ public class Executarfuncao {
 			System.out.println("\n Nome: " + nome);
 			System.out.println("\n CPF: " + CPF);
 			System.out.println("\n Pedido escolhido: " + pedido);
-			System.out.println("\n Pedido N°1  \n XBacon duplo com fritas \n Lata Coca Brind\n ");
+			System.out.println("\n Pedido N°1  \n XBacon duplo com fritas \n Lata Coca Brinde\n ");
 			break;
 		case "2":
 			System.out.println("\n ----- Informação do pedido -----\n");
 			System.out.println("\n Nome: " + nome);
 			System.out.println("\n CPF: " + CPF);
 			System.out.println("\n Pedido escolhido: " + pedido);
-			System.out.println("\n Pedido N°2  \n XSalada duplo com fritas \n Lata fanta Brind\n ");
+			System.out.println("\n Pedido N°2  \n XSalada duplo com fritas \n Lata fanta Brinde\n ");
 			break;
 		case "3":
 			System.out.println("\n ----- Informação do pedido -----\n");
 			System.out.println("\n Nome: " + nome);
 			System.out.println("\n CPF: " + CPF);
 			System.out.println("\n Pedido escolhido: " + pedido);
-			System.out.println("\n Pedido N°3  \n XEgg duplo com fritas \n Lata Sprite Brind\n ");
+			System.out.println("\n Pedido N°3  \n XEgg duplo com fritas \n Lata Sprite Brinde\n ");
 			break;
 		default:
 
