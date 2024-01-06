@@ -7,6 +7,8 @@ public class Executarfuncao {
 	
 	 String nome = ColetarDados.getNome();
 	 String CPF = ColetarDados.getCpf();
+	 char pedido = ColetarDados.getPedido();
+	 
 	 
 	 switch (pedido) {
      case '1':
