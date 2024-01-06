@@ -1,5 +1,34 @@
 package com.github.raulklahold.sistemaderestaurante;
 
-public class Executarfuncao {
 
+public class Executarfuncao {
+	
+	public static String Pedidoslist(ColetarDados ColetarDados){}
+	
+	 String nome = ColetarDados.getNome();
+	 String CPF = ColetarDados.getCpf();
+	 
+	 switch (pedido) {
+     case "Pedido A":
+         System.out.println("Nome: " + nome);
+         System.out.println("CPF: " + CPF);
+         System.out.println("Pedido escolhido: " + pedido);
+         // Aqui você pode adicionar qualquer lógica específica para o "Pedido A" se necessário
+         break;
+     case "Pedido B":
+         System.out.println("Nome: " + nome);
+         System.out.println("CPF: " + CPF);
+         System.out.println("Pedido escolhido: " + pedido);
+         // Lógica específica para o "Pedido B" se necessário
+         break;
+     case "Pedido C":
+         System.out.println("Nome: " + nome);
+         System.out.println("CPF: " + CPF);
+         System.out.println("Pedido escolhido: " + pedido);
+         // Lógica específica para o "Pedido C" se necessário
+         break;
+     default:
+         System.out.println("Pedido não reconhecido.");
+         break;
+	
 }
