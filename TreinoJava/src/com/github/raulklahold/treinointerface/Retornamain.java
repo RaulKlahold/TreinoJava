@@ -1,6 +1,5 @@
 package com.github.raulklahold.treinointerface;
 
-import java.util.Scanner;
 
 public class Retornamain {
 
