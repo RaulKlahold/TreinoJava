@@ -15,19 +15,19 @@ public class Executarfuncao {
          System.out.println("\nNome: " + nome+"\n");
          System.out.println("\nCPF: " + CPF+"\n");
          System.out.println("Pedido escolhido: " + pedido+"\n");
-         System.out.println("");
+         System.out.println("Pedido N°1  \n XBacon duplo com fritas \n Lata Coca Brind\n ");
          break;
      case "2":
     	 System.out.println("\nNome: " + nome+"\n");
          System.out.println("\nCPF: " + CPF+"\n");
          System.out.println("Pedido escolhido: " + pedido+"\n");
-         System.out.println("");
+         System.out.println("Pedido N°2  \n XSalada duplo com fritas \n Lata fanta Brind\n ");
          break;
      case "3":
     	 System.out.println("\nNome: " + nome+"\n");
          System.out.println("\nCPF: " + CPF+"\n");
          System.out.println("Pedido escolhido: " + pedido+"\n");
-         System.out.println("");
+         System.out.println("Pedido N°1  \n XEgg duplo com fritas \n Lata Sprite Brind\n ");
          break;
      default:
     	 
