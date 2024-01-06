@@ -2,4 +2,39 @@ package com.github.raulklahold.sistemaderestaurante;
 
 public class Executarfuncao {
 
+	public static String Pedidoslist(ColetarDados ColetarDados) {
+
+		String nome = ColetarDados.getNome();
+		String CPF = ColetarDados.getCpf();
+		String pedido = ColetarDados.getPedido();
+
+		switch (pedido) {
+		case "1":
+			System.out.println("\n ----- Informação do pedido -----\n");
+			System.out.println("\n Nome: " + nome);
+			System.out.println("\n CPF: " + CPF);
+			System.out.println("\n Pedido escolhido: " + pedido);
+			System.out.println("\n Pedido N°1  \n XBacon duplo com fritas \n Lata Coca Brinde\n ");
+			break;
+		case "2":
+			System.out.println("\n ----- Informação do pedido -----\n");
+			System.out.println("\n Nome: " + nome);
+			System.out.println("\n CPF: " + CPF);
+			System.out.println("\n Pedido escolhido: " + pedido);
+			System.out.println("\n Pedido N°2  \n XSalada duplo com fritas \n Lata fanta Brinde\n ");
+			break;
+		case "3":
+			System.out.println("\n ----- Informação do pedido -----\n");
+			System.out.println("\n Nome: " + nome);
+			System.out.println("\n CPF: " + CPF);
+			System.out.println("\n Pedido escolhido: " + pedido);
+			System.out.println("\n Pedido N°3  \n XEgg duplo com fritas \n Lata Sprite Brinde\n ");
+			break;
+		default:
+
+			System.out.println("Pedido não encontrado");
+			break;
+		}
+		return pedido;
+	}
 }
