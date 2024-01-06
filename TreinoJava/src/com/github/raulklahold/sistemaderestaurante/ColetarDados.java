@@ -4,6 +4,7 @@ public class ColetarDados {
 	private String nome;
 	private String cpf;
 	private String pedido;
+	public Executarfuncao funcao;
 
 	public String getPedido() {
 		return pedido;
