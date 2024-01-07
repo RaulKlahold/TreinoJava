@@ -1,13 +1,23 @@
 package com.github.raulklahold.sistemaderestaurante;
 
+import com.github.raulklahold.DesafioControleFluxo.Exceptions;
+
 public class Executarfuncao {
 
-	public static String Pedidoslist(ColetarDados ColetarDados) {
+	public static String Pedidoslist(ColetarDados ColetarDados) throws ExceptionNome, ExceptionCPF {
 
 		String nome = ColetarDados.getNome();
 		String CPF = ColetarDados.getCpf();
 		String pedido = ColetarDados.getPedido();
 
+		if(nome.length() < 3) {
+			throw new ExceptionNome();
+		}
+		else if(CPF.length() < 11) {
+			throw new ExceptionCPF();
+			
+		}
+		
 		switch (pedido) {
 		case "1":
 			System.out.println("\n ----- Informação do pedido -----\n");
