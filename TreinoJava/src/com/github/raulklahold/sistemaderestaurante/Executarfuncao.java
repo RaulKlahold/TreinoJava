@@ -1,13 +1,26 @@
 package com.github.raulklahold.sistemaderestaurante;
 
+
+
 public class Executarfuncao {
 
-	public static String Pedidoslist(ColetarDados ColetarDados) {
+	public static String Pedidoslist(ColetarDados ColetarDados) throws ExceptionNome, ExceptionCPF, ExceptionPedido {
 
 		String nome = ColetarDados.getNome();
 		String CPF = ColetarDados.getCpf();
 		String pedido = ColetarDados.getPedido();
 
+		if(nome.length() < 3) {
+			throw new ExceptionNome();
+		}
+		else if(CPF.length() < 11) {
+			throw new ExceptionCPF();
+			
+		}
+		else if(pedido.length() > 1) {
+			throw new ExceptionPedido();
+		}
+		else {
 		switch (pedido) {
 		case "1":
 			System.out.println("\n ----- Informação do pedido -----\n");
@@ -34,7 +47,7 @@ public class Executarfuncao {
 
 			System.out.println("Pedido não encontrado");
 			break;
-		}
+		}}
 		return pedido;
 	}
 }

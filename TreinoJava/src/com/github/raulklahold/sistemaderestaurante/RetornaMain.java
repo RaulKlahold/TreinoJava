@@ -2,9 +2,11 @@ package com.github.raulklahold.sistemaderestaurante;
 
 import java.util.Scanner;
 
+
+
 public class RetornaMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ExceptionCPF, ExceptionPedido, ExceptionNome {
 		Scanner Scan = new Scanner(System.in);
 		ColetarDados cliente = new ColetarDados();
 
@@ -21,9 +23,18 @@ public class RetornaMain {
 		cliente.setPedido(pedido);
 		Scan.close();
 
+		try {
 		Executarfuncao.Pedidoslist(cliente);
 		System.out.println("\n Obrigado pela Preferência!");
-		
-	}
+		}
+		catch (ExceptionNome  e) {
+			System.out.println(e.getMessage());
+		}
+		catch (ExceptionCPF f) {
+			System.out.println(f.getMessage());
+		}
+		catch (ExceptionPedido g) {
+			System.out.println(g.getMessage());
+		}
 
-}
+}}
