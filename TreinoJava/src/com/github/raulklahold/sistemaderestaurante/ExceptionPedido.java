@@ -4,7 +4,7 @@ package com.github.raulklahold.sistemaderestaurante;
 public class ExceptionPedido extends Exception {
 
 	public ExceptionPedido() {
-		super("É permitido apenas 1 pedido por vez!");
+		super("Só é permitido apenas 1 pedido por vez!");
 	}
 
 	public ExceptionPedido(String message) {
