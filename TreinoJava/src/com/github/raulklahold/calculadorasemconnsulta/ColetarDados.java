@@ -3,6 +3,7 @@ package com.github.raulklahold.calculadorasemconnsulta;
 public class ColetarDados {
 	private double num1;
 	private double num2;
+	public ExecutaFunction function;
 
 	public double getNum1() {
 		return num1;
