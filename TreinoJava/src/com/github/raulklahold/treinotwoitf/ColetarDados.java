@@ -4,6 +4,7 @@ public class ColetarDados {
  private double nome;
  private double primeironumero;
  private double segundonumero;
+ public PersonaUM persona;
  
  
 public double getNome() {
