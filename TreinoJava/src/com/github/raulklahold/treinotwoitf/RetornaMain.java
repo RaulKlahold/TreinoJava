@@ -9,7 +9,10 @@ public class RetornaMain {
         Scanner scan = new Scanner();
         
         System.out.println("Digite um numero: ");
-		dados.setPrimeironumero(30.0);
+        double numU = scan.nextDouble();
+        dados.setPrimeironumero(numU);
+        
+        
 		dados.setSegundonumero(40.0);
 
 		/*
