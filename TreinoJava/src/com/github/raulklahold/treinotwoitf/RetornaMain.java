@@ -5,15 +5,16 @@ import java.util.Scanner;
 public class RetornaMain {
 
 	public static void main(String[] args) {
+		 Scanner scan = new Scanner(System.in);
 		ColetarDados dados = new ColetarDados();
-        Scanner scan = new Scanner();
         
         System.out.println("Digite um numero: ");
         double numU = scan.nextDouble();
         dados.setPrimeironumero(numU);
         
-        
-		dados.setSegundonumero(40.0);
+        System.out.println("Digite um numero: ");
+        double numD = scan.nextDouble();
+		dados.setSegundonumero(numD);
          scan.close();
 		/*
 		 * primeiro temos que instanciar o dados, para que assim o outro objeto tenha
