@@ -14,7 +14,7 @@ public class RetornaMain {
         
         
 		dados.setSegundonumero(40.0);
-
+         scan.close();
 		/*
 		 * primeiro temos que instanciar o dados, para que assim o outro objeto tenha
 		 * acesso a suas infos se n da conflito
