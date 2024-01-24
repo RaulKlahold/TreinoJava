@@ -1,10 +1,14 @@
 package com.github.raulklahold.treinotwoitf;
 
+import java.util.Scanner;
+
 public class RetornaMain {
 
 	public static void main(String[] args) {
 		ColetarDados dados = new ColetarDados();
-
+        Scanner scan = new Scanner();
+        
+        
 		dados.setPrimeironumero(30.0);
 		dados.setSegundonumero(40.0);
 
