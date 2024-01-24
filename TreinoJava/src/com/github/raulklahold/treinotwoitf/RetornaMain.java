@@ -8,7 +8,7 @@ public class RetornaMain {
 		ColetarDados dados = new ColetarDados();
         Scanner scan = new Scanner();
         
-        
+        System.out.println("Digite um numero: ");
 		dados.setPrimeironumero(30.0);
 		dados.setSegundonumero(40.0);
 
