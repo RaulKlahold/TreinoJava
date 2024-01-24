@@ -1,13 +1,21 @@
 package com.github.raulklahold.treinotwoitf;
 
+import java.util.Scanner;
+
 public class RetornaMain {
 
 	public static void main(String[] args) {
+		try { Scanner scan = new Scanner(System.in);
 		ColetarDados dados = new ColetarDados();
-
-		dados.setPrimeironumero(30.0);
-		dados.setSegundonumero(40.0);
-
+        
+        System.out.println("Digite um numero: ");
+        double numU = scan.nextDouble();
+        dados.setPrimeironumero(numU);
+        
+        System.out.println("Digite um numero: ");
+        double numD = scan.nextDouble();
+		dados.setSegundonumero(numD);
+         scan.close();
 		/*
 		 * primeiro temos que instanciar o dados, para que assim o outro objeto tenha
 		 * acesso a suas infos se n da conflito
@@ -33,6 +41,14 @@ public class RetornaMain {
 		 * O código corrigido no meu comentário anterior reflete essa sequência correta
 		 * de criação e configuração de objetos.
 		 */
+	}catch (ArithmeticException e) {
+
+		System.out.println("Erro ao realizar cálculo: não é possivel divisão por zero.");
+	} catch (NumberFormatException e) {
+		System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
+	} catch (Exception e) {
+		System.out.println("Erro ao realizar cálculo: Ocorreu um erro inesperado " + e.getMessage());
 	}
 
-}
+
+}}
