@@ -21,7 +21,7 @@ public class RetornarMain {
 			System.out.print("Digite a quantidade de meses que o capital irá render: ");
 			int quantidadeMes = scanner.nextInt();
 			investimento.setMesesInvestidos(quantidadeMes);
-			scanner.close();
+			
 
 			double novoCapital = ExecutarCalculo.realizarInvestimento(investimento);
 
