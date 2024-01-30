@@ -19,7 +19,7 @@ public class RetornarMain {
 			System.out.print("Digite um segundo numero para a multiplicação: ");
 	        double segundoNumero = scanner.nextDouble();
 			calculo.setNumero2(segundoNumero);
-			
+			scanner.close();
 			
 			double novoNum = ExecutarTabuada.ExecutarCalculo(calculo);
 			
