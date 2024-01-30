@@ -49,7 +49,7 @@ package com.github.raulklahold.jogodavelha;
 	         } while (!tabuleiro.verificarJogadaValida(linha, coluna));
 
 	         tabuleiro.efetuarJogada(linha, coluna, jogadorAtual);
-	         scanner.close();
+	         
 	     }
 
 	     private void alternarJogador() {
