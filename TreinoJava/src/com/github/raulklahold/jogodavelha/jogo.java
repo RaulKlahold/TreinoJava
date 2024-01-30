@@ -1,9 +1,7 @@
 package com.github.raulklahold.jogodavelha;
+ import java.util.Scanner;
 
-public class jogo {
-	 import java.util.Scanner;
-
-	 public class Jogo {
+	 public class jogo {
 
 	     private Tabuleiro tabuleiro;
 	     private Jogador jogadorAtual;
