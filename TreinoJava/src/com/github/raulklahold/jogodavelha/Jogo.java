@@ -1,7 +1,7 @@
 package com.github.raulklahold.jogodavelha;
  import java.util.Scanner;
 
-	 public class jogo {
+     public class Jogo {
 
 	     private Tabuleiro tabuleiro;
 	     private Jogador jogadorAtual;
@@ -55,4 +55,4 @@ package com.github.raulklahold.jogodavelha;
 	         jogadorAtual = (jogadorAtual.getSimbolo() == 'X') ? new Jogador('O') : new Jogador('X');
 	     }
 	 } 
-}
+
