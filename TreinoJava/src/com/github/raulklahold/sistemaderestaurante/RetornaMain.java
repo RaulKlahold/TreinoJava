@@ -21,7 +21,7 @@ public class RetornaMain {
 		System.out.println("Por favor digite o numero do seu pedido: ");
 		String pedido = Scan.nextLine();
 		cliente.setPedido(pedido);
-		Scan.close();
+		
 
 		try {
 		Executarfuncao.Pedidoslist(cliente);
