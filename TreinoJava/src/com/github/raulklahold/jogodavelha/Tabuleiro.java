@@ -41,5 +41,32 @@ package com.github.raulklahold.jogodavelha;
 		    public void efetuarJogada(int linha, int coluna, Jogador jogador) {
 		        tabuleiro[linha][coluna] = jogador.getSimbolo();
 		    }
+		    public boolean verificarVitoria(Jogador jogador) {
+		        for (int i = 0; i < 3; i++) {
+		            if ((tabuleiro[i][0] == jogador.getSimbolo() && tabuleiro[i][1] == jogador.getSimbolo() && tabuleiro[i][2] == jogador.getSimbolo()) ||
+		                (tabuleiro[0][i] == jogador.getSimbolo() && tabuleiro[1][i] == jogador.getSimbolo() && tabuleiro[2][i] == jogador.getSimbolo())) {
+		                return true;
+		            }
+		        }
+
+		        if ((tabuleiro[0][0] == jogador.getSimbolo() && tabuleiro[1][1] == jogador.getSimbolo() && tabuleiro[2][2] == jogador.getSimbolo()) ||
+		            (tabuleiro[0][2] == jogador.getSimbolo() && tabuleiro[1][1] == jogador.getSimbolo() && tabuleiro[2][0] == jogador.getSimbolo())) {
+		            return true;
+		        }
+
+		        return false;
+		    }
+
+		    public boolean verificarEmpate() {
+		        for (int i = 0; i < 3; i++) {
+		            for (int j = 0; j < 3; j++) {
+		                if (tabuleiro[i][j] == ' ') {
+		                    return false;
+		                }
+		            }
+		        }
+		        return true;
+		    }
+		} 
 
 }
