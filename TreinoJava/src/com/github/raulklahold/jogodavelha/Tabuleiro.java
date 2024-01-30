@@ -1,6 +1,6 @@
 package com.github.raulklahold.jogodavelha;
 
-public class classtabuleiro {
+
 	 public class Tabuleiro {
 
 		    private char[][] tabuleiro;
