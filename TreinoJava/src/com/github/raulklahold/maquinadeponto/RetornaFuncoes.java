@@ -3,14 +3,21 @@ package com.github.raulklahold.maquinadeponto;
 
 public class RetornaFuncoes {
 	
-	public static double HorarioDeTrabalho(CapitacaoDados CapitacaoDados) {
+	public static String HorarioDeTrabalho(CapitacaoDados CapitacaoDados) {
 
 	    double hora1 = CapitacaoDados.getHorarioentrada();
 	    double hora2 = CapitacaoDados.getHorariosaida();
 	    
-	    double diferença = hora2 - hora1;
+	    double diferenca = hora2 - hora1;
+	    String horacontabilizada;
 	    
-	        
+	    if(diferenca >= 8) {
+	    	horacontabilizada = "Carga horaria completa";
+	    }else {
+	    	horacontabilizada = "Carga horaria incompleta";
+	    }
+	    
+	        return horacontabilizada;
 	     
 	        
 	}
