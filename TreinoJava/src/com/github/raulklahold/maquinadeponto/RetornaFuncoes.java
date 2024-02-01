@@ -6,7 +6,7 @@ public class RetornaFuncoes {
 	
 	
 
-	    public static void main(String[] args) {
+	   
 	        // Criar duas instâncias de LocalTime
 	        LocalTime hora1 = LocalTime.of(10, 30, 0); // 10:30:00
 	        LocalTime hora2 = LocalTime.of(14, 45, 30); // 14:45:30
@@ -19,8 +19,8 @@ public class RetornaFuncoes {
 	        long minutos = diferenca.toMinutesPart();
 	        long segundos = diferenca.toSecondsPart();
 
-	        System.out.println("Diferença: " + horas + " horas, " + minutos + " minutos, " + segundos + " segundos.");
-	    }
+	        
+	    
 	}
 
 
