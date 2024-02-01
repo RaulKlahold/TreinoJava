@@ -6,7 +6,7 @@ public class CapitacaoDados {
 	private String setor;
 	private double horarioentrada;
 	private double horariosaida;
-
+    public RetornaFuncoes cargahoraria;
 	
 	public String getNome() {
 		return nome;
