@@ -15,7 +15,7 @@ public class RetornaFuncoes {
 
 	       
 	        long horas = diferenca.toHours();
-	        long minutos = diferenca.toMinutesPart();
+	     
 	        
 	        
 	    
