@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class RetornaMain {
 	Scanner scan = new Scanner(System.in);
+	CapitacaoDados horario = new CapitacaoDados();
+	
+	
+	
+	
 	
 
 }
