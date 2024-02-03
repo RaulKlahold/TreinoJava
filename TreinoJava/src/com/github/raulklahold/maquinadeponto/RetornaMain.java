@@ -11,6 +11,10 @@ public class RetornaMain {
 	System.out.print("Digite seu nome: ");
 	String nome = scan.next();
 	horario.setNome(nome);
+	
+	System.out.print("Digite seu setor: ");
+	String setor = scan.next();
+	horario.setSetor(setor);
 
 	
 	
