@@ -3,7 +3,7 @@ package com.github.raulklahold.maquinadeponto;
 
 public class RetornaFuncoes {
 	
-	public static String HorarioDeTrabalho(CapitacaoDados CapitacaoDados) {
+	public String HorarioDeTrabalho(CapitacaoDados CapitacaoDados) {
 
 	    double hora1 = CapitacaoDados.getHorarioentrada();
 	    double hora2 = CapitacaoDados.getHorariosaida();

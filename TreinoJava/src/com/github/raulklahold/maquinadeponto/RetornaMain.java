@@ -23,6 +23,9 @@ public class RetornaMain {
 	System.out.println("Digite o horario de saida: ");
 	double horarioS = scan.nextDouble();
 	horario.setHorariosaida(horarioS);
+	
+	
+	RetornaFuncoes.HorarioDeTrabalho(horario);
 
 	
 	
