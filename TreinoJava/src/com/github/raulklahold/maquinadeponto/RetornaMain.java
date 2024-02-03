@@ -15,6 +15,14 @@ public class RetornaMain {
 	System.out.print("Digite seu setor: ");
 	String setor = scan.next();
 	horario.setSetor(setor);
+	
+	System.out.println("Digite seu horario de entrada: ");
+	double horarioE = scan.nextDouble();
+	horario.setHorarioentrada(horarioE);
+	
+	System.out.println("Digite o horario de saida: ");
+	double horarioS = scan.nextDouble();
+	horario.setHorariosaida(horarioS);
 
 	
 	
