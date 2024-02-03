@@ -25,8 +25,8 @@ public class RetornaMain {
 	horario.setHorariosaida(horarioS);
 	
 	
-	RetornaFuncoes.HorarioDeTrabalho(horario);
-
+	String cargahoraria = RetornaFuncoes.HorarioDeTrabalho(horario);
+    System.out.println(cargahoraria);
 	
 	
 	
