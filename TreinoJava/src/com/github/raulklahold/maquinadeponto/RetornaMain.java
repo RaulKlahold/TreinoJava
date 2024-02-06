@@ -30,7 +30,7 @@ public class RetornaMain {
     System.out.println(cargahoraria);
     
 		} catch (NumberFormatException e) {
-			System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
+			System.out.println("Por favor, insira um horario valido");
 		
 		}
 	
