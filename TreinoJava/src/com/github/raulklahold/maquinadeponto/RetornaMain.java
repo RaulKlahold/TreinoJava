@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RetornaMain {
 	public static void main(String[] args) {
-		
+		try {
 	Scanner scan = new Scanner(System.in);
 	CapitacaoDados horario = new CapitacaoDados();
 	
@@ -28,7 +28,15 @@ public class RetornaMain {
 	
 	String cargahoraria = RetornaFuncoes.HorarioDeTrabalho(horario);
     System.out.println(cargahoraria);
-	
+		} catch (ArithmeticException e) {
+
+			System.out.println("Erro ao realizar cálculo: não é possivel divisão por zero.");
+		} catch (NumberFormatException e) {
+			System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
+		} catch (Exception e) {
+			System.out.println("Erro ao realizar cálculo: Ocorreu um erro inesperado " + e.getMessage());
+		}
+
 	
 	
 	
