@@ -28,9 +28,7 @@ public class RetornaMain {
 	
 	String cargahoraria = RetornaFuncoes.HorarioDeTrabalho(horario);
     System.out.println(cargahoraria);
-		} catch (ArithmeticException e) {
-
-			System.out.println("Erro ao realizar cálculo: não é possivel divisão por zero.");
+    
 		} catch (NumberFormatException e) {
 			System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
 		
