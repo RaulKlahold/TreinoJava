@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RetornaMain {
 	public static void main(String[] args) {
-		
+		try {
 	Scanner scan = new Scanner(System.in);
 	CapitacaoDados horario = new CapitacaoDados();
 	
@@ -28,7 +28,11 @@ public class RetornaMain {
 	
 	String cargahoraria = RetornaFuncoes.HorarioDeTrabalho(horario);
     System.out.println(cargahoraria);
-	
+    
+		} catch (NumberFormatException e) {
+			System.out.println("Por favor, insira um horario valido");
+		
+		}
 	
 	
 	
