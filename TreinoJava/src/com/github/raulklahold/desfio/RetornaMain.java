@@ -7,9 +7,9 @@ public class RetornaMain {
 
 }
 class temperatura implements Comparable<temperatura>{
-	private int Temp;
+	private double Temp;
 	
-	public temperatura(int Temp) {
+	public temperatura(double Temp) {
 		this.Temp = Temp;
 	}
 
@@ -26,7 +26,8 @@ class temperatura implements Comparable<temperatura>{
 		Temp = temp;
 	}
 	@Override
-	public int compareTo(temperatura temperatura) {
-		return this.getTemp().compareToIgnoreCase(temperatura.getTemp());
+	public int compareTo(temperatura Temperatura) {
+		return Double.compare(this.getTemp(), Temperatura.getTemp());
+		
 	}
 }
