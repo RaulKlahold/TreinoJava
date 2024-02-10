@@ -1,20 +1,20 @@
 package com.github.raulklahold.desfio;
 
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
+
 
 public class RetornaMain {
-	 public static void main(String[] args) {
+	 
+	public static  void main(String[] args) {
 	        GerenciadorTemperaturas gerenciador = new GerenciadorTemperaturas();
 
-	        // Adicionar alguns números para serem comparados
+	      
 	        gerenciador.adicionarTemperatura(20.5);
 	        gerenciador.adicionarTemperatura(15.7);
 	        gerenciador.adicionarTemperatura(25.3);
 	        gerenciador.adicionarTemperatura(18.9);
 	        gerenciador.adicionarTemperatura(22.0);
-	        gerenciador.adicionarTemperatura(19.6); // Adicionar até 6 temperaturas
+	        gerenciador.adicionarTemperatura(19.6); 
 
 	      
 	        gerenciador.ordenarTemperaturas();
@@ -22,6 +22,8 @@ public class RetornaMain {
 	       
 	        for (temperatura temp : gerenciador.getTemperaturas()) {
 	            System.out.println(temp);
+	            
+	            
 	        }
 	    }
 
@@ -54,22 +56,4 @@ class temperatura implements Comparable<temperatura>{
 	
 
 }
-public class GerenciadorTemperaturas {
-    private List<temperatura> temperaturas;
 
-    public GerenciadorTemperaturas() {
-        this.temperaturas = new ArrayList<>();
-    }
-
-    public void adicionarTemperatura(double valor) {
-        temperaturas.add(new temperatura(valor));
-    }
-
-    public List<temperatura> getTemperaturas() {
-        return temperaturas;
-    }
-
-    public void ordenarTemperaturas() {
-        Collections.sort(temperaturas);
-    }
-}
