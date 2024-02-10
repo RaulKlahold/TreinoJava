@@ -19,8 +19,9 @@ public class RetornaMain {
 	      
 	        gerenciador.ordenarTemperaturas();
 
-	       
+	        
 	        for (temperatura temp : gerenciador.getTemperaturas()) {
+	        	
 	            System.out.println(temp);
 	            
 	            
