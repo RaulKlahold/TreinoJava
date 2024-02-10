@@ -1,21 +1,32 @@
 package com.github.raulklahold.desfio;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class RetornaMain {
 
-	List<Temperatura> listaArray = new ArrayList<>();
-	{
-		{
-			add(new Temperatura(30));
-		
-		add(new Temperatura(30));
-		add(new Temperatura(30));
-		add(new Temperatura(30));
-		add(new Temperatura(30));
-		add(new Temperatura(30));
-		}
+
+
+}
+class temperatura implements Comparable<temperatura>{
+	private int Temp;
+	
+	public temperatura(int Temp) {
+		this.Temp = Temp;
 	}
 
+	@Override
+	public String toString() {
+		return "temperatura [Temp=" + Temp + "]";
+	}
+
+	public double getTemp() {
+		return Temp;
+	}
+
+	public void setTemp(int temp) {
+		Temp = temp;
+	}
+	@Override
+	public int compareTo(temperatura temperatura) {
+		return this.getTemp().compareToIgnoreCase(temperatura.getTemp());
+	}
 }
