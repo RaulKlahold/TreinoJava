@@ -50,23 +50,26 @@ class temperatura implements Comparable<temperatura>{
 		return Double.compare(this.getTemp(), Temperatura.getTemp());
 		
 	}
-	public class GerenciadorTemperaturas {
-	    private List<temperatura> temperaturas;
+	
+	
 
-	    public GerenciadorTemperaturas() {
-	        this.temperaturas = new ArrayList<>();
-	    }
+}
+public class GerenciadorTemperaturas {
+    private List<temperatura> temperaturas;
 
-	    public void adicionarTemperatura(double valor) {
-	        temperaturas.add(new temperatura(valor));
-	    }
+    public GerenciadorTemperaturas() {
+        this.temperaturas = new ArrayList<>();
+    }
 
-	    public List<temperatura> getTemperaturas() {
-	        return temperaturas;
-	    }
+    public void adicionarTemperatura(double valor) {
+        temperaturas.add(new temperatura(valor));
+    }
 
-	    public void ordenarTemperaturas() {
-	        Collections.sort(temperaturas);
-	    }
+    public List<temperatura> getTemperaturas() {
+        return temperaturas;
+    }
 
-}}
+    public void ordenarTemperaturas() {
+        Collections.sort(temperaturas);
+    }
+}
