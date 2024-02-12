@@ -22,10 +22,10 @@ public class RetornaMain {
 
 	        
 	        for (temperatura temp : gerenciador.getTemperaturas()) {
-	        	if(temp> temp)
+	        	if(temp> ()/ tamanho) {
 	            System.out.println(temp);
 	            
-	            
+	        	}
 	        }
 	    }
 
