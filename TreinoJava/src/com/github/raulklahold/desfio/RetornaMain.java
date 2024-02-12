@@ -1,6 +1,7 @@
 package com.github.raulklahold.desfio;
 
 import java.util.Collections;
+import java.util.List;
 
 
 public class RetornaMain {
@@ -21,15 +22,16 @@ public class RetornaMain {
 	        gerenciador.ordenarTemperaturas();
 
 	        
-	        for (temperatura temp : gerenciador.getTemperaturas()) {
-	        	if(temp> ()/ tamanho) {
+	        List<temperatura> maioresAcimaDaMedia = gerenciador.obterMaioresAcimaDaMedia();
+	        System.out.println("Os dois maiores valores acima da média são:");
+	        for (temperatura temp : maioresAcimaDaMedia) {
 	            System.out.println(temp);
 	            
 	        	}
 	        }
 	    }
 
-}
+
 class temperatura implements Comparable<temperatura>{
 	private double Temp;
 	
