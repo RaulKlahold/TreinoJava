@@ -7,7 +7,8 @@ public class RetornaMain {
 	 
 	public static  void main(String[] args) {
 	        GerenciadorTemperaturas gerenciador = new GerenciadorTemperaturas();
-
+            final int tamanho = 5;
+            double soma = 0;
 	      
 	        gerenciador.adicionarTemperatura(20.5);
 	        gerenciador.adicionarTemperatura(15.7);
@@ -21,7 +22,7 @@ public class RetornaMain {
 
 	        
 	        for (temperatura temp : gerenciador.getTemperaturas()) {
-	        	
+	        	if(temp> temp)
 	            System.out.println(temp);
 	            
 	            
