@@ -1,13 +1,14 @@
 package com.github.raulklahold.desfio;
 
-import java.util.Collections;
+
+import java.util.List;
 
 
 public class RetornaMain {
 	 
 	public static  void main(String[] args) {
 	        GerenciadorTemperaturas gerenciador = new GerenciadorTemperaturas();
-
+            
 	      
 	        gerenciador.adicionarTemperatura(20.5);
 	        gerenciador.adicionarTemperatura(15.7);
@@ -20,15 +21,16 @@ public class RetornaMain {
 	        gerenciador.ordenarTemperaturas();
 
 	        
-	        for (temperatura temp : gerenciador.getTemperaturas()) {
-	        	
+	        List<temperatura> maioresAcimaDaMedia = gerenciador.obterMaioresAcimaDaMedia();
+	        System.out.println("Os dois maiores valores acima da média são:");
+	        for (temperatura temp : maioresAcimaDaMedia) {
 	            System.out.println(temp);
 	            
-	            
+	        	}
 	        }
 	    }
 
-}
+
 class temperatura implements Comparable<temperatura>{
 	private double Temp;
 	
