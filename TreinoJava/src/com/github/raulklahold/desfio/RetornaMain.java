@@ -45,7 +45,7 @@ public class RetornaMain {
 
 	        
 	        List<temperatura> maioresAcimaDaMedia = gerenciador.obterMaioresAcimaDaMedia();
-	        System.out.println("Os dois maiores valores acima da média são:");
+	        System.out.println("Os dois maiores valores acima da média de temperaturas são:");
 	        for (temperatura temp : maioresAcimaDaMedia) {
 	            System.out.println(temp);
 	            
