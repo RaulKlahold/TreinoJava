@@ -2,27 +2,50 @@ package com.github.raulklahold.desfio;
 
 
 import java.util.List;
+import java.util.Scanner;
 
 
 public class RetornaMain {
 	 
 	public static  void main(String[] args) {
 	        GerenciadorTemperaturas gerenciador = new GerenciadorTemperaturas();
+            Scanner scan = new Scanner(System.in);
             
-	      
-	        gerenciador.adicionarTemperatura(20.5);
-	        gerenciador.adicionarTemperatura(15.7);
-	        gerenciador.adicionarTemperatura(25.3);
-	        gerenciador.adicionarTemperatura(18.9);
-	        gerenciador.adicionarTemperatura(22.0);
-	        gerenciador.adicionarTemperatura(19.6); 
+	        System.out.println("Comparação de temperaturas\n");
+	        System.out.println("\n--------------------------");
+	        
+	        System.out.println("Digite uma temperatura 1/6:  ");
+	        double temp1 = scan.nextDouble();
+	        gerenciador.adicionarTemperatura(temp1);
+	        
+	        System.out.println("Digite uma temperatura 2/6:  ");
+	        double temp2 = scan.nextDouble();
+	        gerenciador.adicionarTemperatura(temp2);
+	        
+	        System.out.println("Digite uma temperatura 3/6:  ");
+	        double temp3 = scan.nextDouble();
+	        gerenciador.adicionarTemperatura(temp3);
+	        
+	        System.out.println("Digite uma temperatura 4/6:  ");
+	        double temp4 = scan.nextDouble();
+	        gerenciador.adicionarTemperatura(temp4);
+	        
+	        System.out.println("Digite uma temperatura 5/6:  ");
+	        double temp5 = scan.nextDouble();
+	        gerenciador.adicionarTemperatura(temp5);
+	        
+	        System.out.println("Digite uma temperatura 6/6:  ");
+	        double temp6 = scan.nextDouble();
+	        gerenciador.adicionarTemperatura(temp6); 
+	        
+	        scan.close();
 
 	      
 	        gerenciador.ordenarTemperaturas();
 
 	        
 	        List<temperatura> maioresAcimaDaMedia = gerenciador.obterMaioresAcimaDaMedia();
-	        System.out.println("Os dois maiores valores acima da média são:");
+	        System.out.println("Os dois maiores valores acima da média de temperaturas são:");
 	        for (temperatura temp : maioresAcimaDaMedia) {
 	            System.out.println(temp);
 	            
