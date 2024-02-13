@@ -18,8 +18,10 @@ public class RetornaMain {
 	        double temp1 = scan.nextDouble();
 	        gerenciador.adicionarTemperatura(temp1);
 	        
+	        System.out.println("Digite uma temperatura 2/5:  ");
+	        double temp2 = scan.nextDouble();
+	        gerenciador.adicionarTemperatura(temp2);
 	        
-	        gerenciador.adicionarTemperatura(15.7);
 	        gerenciador.adicionarTemperatura(25.3);
 	        gerenciador.adicionarTemperatura(18.9);
 	        gerenciador.adicionarTemperatura(22.0);
