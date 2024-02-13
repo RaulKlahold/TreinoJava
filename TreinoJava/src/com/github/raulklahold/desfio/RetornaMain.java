@@ -10,7 +10,9 @@ public class RetornaMain {
 	public static  void main(String[] args) {
 	        GerenciadorTemperaturas gerenciador = new GerenciadorTemperaturas();
             Scanner scan = new Scanner(System.in);
-	      
+            
+	        System.out.println("Comparação de temperaturas\n");
+	        System.out.println("\n--------------------------");
 	        gerenciador.adicionarTemperatura(20.5);
 	        gerenciador.adicionarTemperatura(15.7);
 	        gerenciador.adicionarTemperatura(25.3);
