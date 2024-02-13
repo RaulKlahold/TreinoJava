@@ -33,7 +33,10 @@ public class RetornaMain {
 	        System.out.println("Digite uma temperatura 5/6:  ");
 	        double temp5 = scan.nextDouble();
 	        gerenciador.adicionarTemperatura(temp5);
-	        gerenciador.adicionarTemperatura(19.6); 
+	        
+	        System.out.println("Digite uma temperatura 6/6:  ");
+	        double temp6 = scan.nextDouble();
+	        gerenciador.adicionarTemperatura(temp6); 
 
 	      
 	        gerenciador.ordenarTemperaturas();
