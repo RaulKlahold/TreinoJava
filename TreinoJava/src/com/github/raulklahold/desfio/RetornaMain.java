@@ -14,7 +14,7 @@ public class RetornaMain {
 	        System.out.println("Comparação de temperaturas\n");
 	        System.out.println("\n--------------------------");
 	        
-	        System.out.println("Digite uma temperatura 1/6:  ");
+	        System.out.println("Digite a primeira temperatura:  ");
 	        double temp1 = scan.nextDouble();
 	        gerenciador.adicionarTemperatura(temp1);
 	        

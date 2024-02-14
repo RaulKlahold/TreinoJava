@@ -41,7 +41,7 @@ import java.util.List;
 	        double media = calcularMedia();
 	        int count = 0;
 	        
-	        for (int i = temperaturas.size() - 1; i >= 0; i--) {
+	        for (int i = temperaturas.size() -1; i >= 0; i--) {
 	            temperatura temp = temperaturas.get(i);
 	            if (temp.getTemp() > media) {
 	                maioresAcimaDaMedia.add(temp);
