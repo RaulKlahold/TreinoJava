@@ -14,27 +14,27 @@ public class RetornaMain {
 	        System.out.println("Comparação de temperaturas\n");
 	        System.out.println("\n--------------------------");
 	        
-	        System.out.println("Digite uma temperatura 1/6:  ");
+	        System.out.println("Digite a primeira temperatura:  ");
 	        double temp1 = scan.nextDouble();
 	        gerenciador.adicionarTemperatura(temp1);
 	        
-	        System.out.println("Digite uma temperatura 2/6:  ");
+	        System.out.println("Digite a segunda temperatura:  ");
 	        double temp2 = scan.nextDouble();
 	        gerenciador.adicionarTemperatura(temp2);
 	        
-	        System.out.println("Digite uma temperatura 3/6:  ");
+	        System.out.println("Digite a terceira temperatura:  ");
 	        double temp3 = scan.nextDouble();
 	        gerenciador.adicionarTemperatura(temp3);
 	        
-	        System.out.println("Digite uma temperatura 4/6:  ");
+	        System.out.println("Digite a quarta temperatura:  ");
 	        double temp4 = scan.nextDouble();
 	        gerenciador.adicionarTemperatura(temp4);
 	        
-	        System.out.println("Digite uma temperatura 5/6:  ");
+	        System.out.println("Digite a quinta temperatura:  ");
 	        double temp5 = scan.nextDouble();
 	        gerenciador.adicionarTemperatura(temp5);
 	        
-	        System.out.println("Digite uma temperatura 6/6:  ");
+	        System.out.println("Digite a sexta temperatura:  ");
 	        double temp6 = scan.nextDouble();
 	        gerenciador.adicionarTemperatura(temp6); 
 	        
@@ -45,7 +45,7 @@ public class RetornaMain {
 
 	        
 	        List<temperatura> maioresAcimaDaMedia = gerenciador.obterMaioresAcimaDaMedia();
-	        System.out.println("Os dois maiores valores acima da média de temperaturas são:");
+	        System.out.println("Os dois maiores valores acima da média de temperaturas são: ");
 	        for (temperatura temp : maioresAcimaDaMedia) {
 	            System.out.println(temp);
 	            
