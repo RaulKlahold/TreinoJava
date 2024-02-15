@@ -2,7 +2,7 @@ package treinoSet;
 
 import java.util.Objects;
 
-public class Classepessoa  {
+public class Classepessoa implements Comparable<Classepessoa>  {
 private String nome;
 
 public String getNome() {
@@ -40,4 +40,11 @@ public void setNome(String nome) {
 	this.nome = nome;
 }
 
+
+@Override
+public int compareTo(Classepessoa outraPessoa) {
+    return this.nome.compareTo(outraPessoa.nome);
 }
+}
+
+
