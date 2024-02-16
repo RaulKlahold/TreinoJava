@@ -1,11 +1,15 @@
 package com.github.raulklahold.treinoMap;
 
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.Map;
 
 public class comparatorInts {
 
-	 public class ComparatorInts implements Comparator<integer>{
+	 public comparatorInts(HashMap<Integer, String> mapaNomes) {
+		
+
+	public class ComparatorInts implements Comparator<integer>{
 		 
 		 private Map<integer string=""> base;
 
