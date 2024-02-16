@@ -5,10 +5,7 @@ import java.util.TreeMap;
 
 public class OrdenandoHash {
 
-	
-	public static void main(String[] args) {
-		
-		public class OrdenandoHash {
+
 			public static void main(String[] args) {
 				
 			
