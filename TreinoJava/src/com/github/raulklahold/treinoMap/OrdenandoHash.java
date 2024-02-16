@@ -3,16 +3,17 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class ordenandoHAsh {
+public class OrdenandoHash {
 
 	
 	public static void main(String[] args) {
 		
-		class OrdenandoHashMap {
+		public class OrdenandoHash {
 			public static void main(String[] args) {
 				
-			}
+			
 		        HashMap<Integer, String> mapaNomes = new HashMap<>();
+		        
 		        mapaNomes.put(1, "João Delfino");
 		        mapaNomes.put(2, "Maria do Carmo");
 		        mapaNomes.put(3, "Claudinei Silva");
@@ -28,4 +29,4 @@ public class ordenandoHAsh {
 		        }
 		    }
 
-}
+}}}
