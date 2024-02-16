@@ -18,7 +18,7 @@ public class OrdenandoHash {
 
 		        comparatorInts compInt = new comparatorInts(mapaNomes);
 
-		        Map<Integer, String> mapaOrdenado = new TreeMap<>(compInt);
+		        Map<Integer, String> mapaOrdenado = new TreeMap<>();
 		        mapaOrdenado.putAll(mapaNomes);
 
 		        for(Integer valor : mapaOrdenado.keySet()){
@@ -26,4 +26,4 @@ public class OrdenandoHash {
 		        }
 		    }
 
-}}}
+}
