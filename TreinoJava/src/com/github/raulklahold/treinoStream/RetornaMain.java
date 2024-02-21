@@ -9,10 +9,10 @@ public class RetornaMain {
 		List<Integer> numeros = Arrays.asList(1,2,3,4,5,6,7);
 		
 		int somaDosParesDobrados = numeros.stream()
-		       .filter(n -> n > 3)
+		       .filter(n -> n > 6)
 		       .mapToInt(n -> n * 2)
 		       .sum();
-		       System.out.println("A soma deu"+somaDosParesDobrados);
+		       System.out.println("A soma deu: "+somaDosParesDobrados);
 
 	
 
