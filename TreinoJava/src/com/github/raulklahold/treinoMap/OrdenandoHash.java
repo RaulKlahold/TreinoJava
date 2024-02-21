@@ -16,12 +16,12 @@ public class OrdenandoHash {
 		        mapaNomes.put(3, "Claudinei Silva");
 		        mapaNomes.put(4, "Amélia Mourão");
 
-		        comparatorInts compInt = new comparatorInts(mapaNomes);
+		        //comparatorInts compInt = new comparatorInts(mapaNomes);
 
-		        Map<Integer, String> mapaOrdenado = new TreeMap<>();
-		        mapaOrdenado.putAll(mapaNomes);
+		        //Map<Integer, String> mapaOrdenado = new TreeMap<>();
+		        //mapaOrdenado.putAll(mapaNomes);
 
-		        for(Integer valor : mapaOrdenado.keySet()){
+		        for(Integer valor : mapaNomes.keySet()){
 		            System.out.println(valor + " " + mapaNomes.get(valor));
 		        }
 		    }
