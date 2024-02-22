@@ -18,7 +18,7 @@ public class RetornaMain {
 
 		int somaDosParesDobrados = numeros.stream()
 				.filter(n -> n > 2)
-				.mapToInt(n -> (n * 2) / 2)
+				.mapToInt(n -> (n * 3) / 2)
 				.sum(); 
 		/*
 		* O ponto e vírgula é colocado apenas após sum()
