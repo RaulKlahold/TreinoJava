@@ -17,7 +17,7 @@ public class RetornaMain {
 		 */
 
 		int somaDosParesDobrados = numeros.stream()
-				.filter(n -> n > 10)
+				.filter(n -> n > 2)
 				.mapToInt(n -> (n * 2) / 2)
 				.sum(); 
 		/*
