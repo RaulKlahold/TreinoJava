@@ -43,9 +43,7 @@ public class CalculadoraEmSi {
         } catch (ArithmeticException e) {
            
            
-            System.out.println("Erro ao realizar cálculo: Ocorreu um erro inesperado " + e.getMessage());
-        }
-
+          
 	}
 
 }
