@@ -26,6 +26,8 @@ public class OrdenandoHash {
 		        System.out.println("Digite um outro nome: ");
 		        String nome4 = scan.next();
 		        mapaNomes.put(4, nome4);
+		        
+		        scan.close();
 
 		        //comparatorInts compInt = new comparatorInts(mapaNomes);
 
