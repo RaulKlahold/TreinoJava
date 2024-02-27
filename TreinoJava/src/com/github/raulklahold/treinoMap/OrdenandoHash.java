@@ -11,8 +11,10 @@ public class OrdenandoHash {
 		        HashMap<Integer, String> mapaNomes = new HashMap<>();
 		        Scanner scan = new Scanner(System.in);
 		        
+		        System.out.println("Digite um nome: ");
+		        String nome1 = scan.next();
+		        mapaNomes.put(1, nome1);
 		        
-		        mapaNomes.put(1, "João Delfino");
 		        mapaNomes.put(2, "Maria do Carmo");
 		        mapaNomes.put(3, "Claudinei Silva");
 		        mapaNomes.put(4, "Amélia Mourão");
