@@ -19,11 +19,11 @@ public class OrdenandoHash {
 		        String nome2 = scan.next();
 		        mapaNomes.put(2, nome2);
 		        
-		        System.out.println("Digite um nome: ");
+		        System.out.println("Digite um outro nome: ");
 		        String nome3 = scan.next();
 		        mapaNomes.put(3, nome3);
 		        
-		        System.out.println("Digite um nome: ");
+		        System.out.println("Digite um outro nome: ");
 		        String nome4 = scan.next();
 		        mapaNomes.put(4, nome4);
 
