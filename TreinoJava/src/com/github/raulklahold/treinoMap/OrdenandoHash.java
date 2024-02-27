@@ -1,5 +1,6 @@
 package com.github.raulklahold.treinoMap;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class OrdenandoHash {
 
@@ -8,11 +9,25 @@ public class OrdenandoHash {
 				
 			
 		        HashMap<Integer, String> mapaNomes = new HashMap<>();
+		        Scanner scan = new Scanner(System.in);
 		        
-		        mapaNomes.put(1, "João Delfino");
-		        mapaNomes.put(2, "Maria do Carmo");
-		        mapaNomes.put(3, "Claudinei Silva");
-		        mapaNomes.put(4, "Amélia Mourão");
+		        System.out.println("Digite um nome: ");
+		        String nome1 = scan.next();
+		        mapaNomes.put(1, nome1);
+		        
+		        System.out.println("Digite um outro nome: ");
+		        String nome2 = scan.next();
+		        mapaNomes.put(2, nome2);
+		        
+		        System.out.println("Digite um outro nome: ");
+		        String nome3 = scan.next();
+		        mapaNomes.put(3, nome3);
+		        
+		        System.out.println("Digite um outro nome: ");
+		        String nome4 = scan.next();
+		        mapaNomes.put(4, nome4);
+		        
+		        scan.close();
 
 		        //comparatorInts compInt = new comparatorInts(mapaNomes);
 
