@@ -15,7 +15,11 @@ public class OrdenandoHash {
 		        String nome1 = scan.next();
 		        mapaNomes.put(1, nome1);
 		        
-		        mapaNomes.put(2, "Maria do Carmo");
+		        System.out.println("Digite um outro nome: ");
+		        String nome2 = scan.next();
+		        mapaNomes.put(2, nome2);
+		        
+		        
 		        mapaNomes.put(3, "Claudinei Silva");
 		        mapaNomes.put(4, "Amélia Mourão");
 
