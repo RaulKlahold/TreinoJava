@@ -23,7 +23,9 @@ public class OrdenandoHash {
 		        String nome3 = scan.next();
 		        mapaNomes.put(3, nome3);
 		        
-		        mapaNomes.put(4, "Amélia Mourão");
+		        System.out.println("Digite um nome: ");
+		        String nome4 = scan.next();
+		        mapaNomes.put(4, nome4);
 
 		        //comparatorInts compInt = new comparatorInts(mapaNomes);
 
