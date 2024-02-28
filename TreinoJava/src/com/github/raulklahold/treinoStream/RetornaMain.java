@@ -6,7 +6,7 @@ import java.util.List;
 public class RetornaMain {
 
 	public static void main(String[] args) {
-		List<Integer> numeros = Arrays.asList(3, 2, 3, 4, 5, 6, 7);
+		List<Integer> numeros = Arrays.asList(3, 4, 3, 4, 5, 6, 7);
 		/*
 		 * Array.asList inicia uma lista com valores prédefinidos, 
 		 * no qual não podemos
