@@ -13,22 +13,22 @@ public class RetornaMain {
 		int var1 = scan.nextInt();
 		
 		System.out.println("Digite um outro numero: ");
-		int var2 = 3;
+		int var2 = scan.nextInt();
 		
 		System.out.println("Digite um outro numero: ");
-		int var3 = 4;
+		int var3 = scan.nextInt();
 		
 		System.out.println("Digite um outro numero: ");
-		int var4 = 5;
+		int var4 = scan.nextInt();
+	
+		System.out.println("Digite um outro numero: ");
+		int var5 = scan.nextInt();
 		
 		System.out.println("Digite um outro numero: ");
-		int var5 = 6;
+		int var6 = scan.nextInt();
 		
 		System.out.println("Digite um outro numero: ");
-		int var6 = 7;
-		
-		System.out.println("Digite um outro numero: ");
-		int var7 = 8;
+		int var7 = scan.nextInt();
 		
 		List<Integer> numeros = Arrays.asList(var1, var2, var3, var4, var5, var6, var7);
 		/*
