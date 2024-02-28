@@ -17,7 +17,7 @@ public class RetornaMain {
 		int var6 = 7;
 		int var7 = 8;
 		
-		List<Integer> numeros = Arrays.asList(3, 4, 5, 6, 7, 8, 9);
+		List<Integer> numeros = Arrays.asList(var1, var2, var3, var4, var5, var6, var7);
 		/*
 		 * Array.asList inicia uma lista com valores prédefinidos, 
 		 * no qual não podemos
