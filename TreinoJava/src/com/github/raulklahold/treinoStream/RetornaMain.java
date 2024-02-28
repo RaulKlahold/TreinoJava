@@ -2,10 +2,21 @@ package com.github.raulklahold.treinoStream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class RetornaMain {
 
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int var1 = 2;
+		int var2 = 3;
+		int var3 = 4;
+		int var4 = 5;
+		int var5 = 6;
+		int var6 = 7;
+		int var7 = 8;
+		
 		List<Integer> numeros = Arrays.asList(3, 4, 5, 6, 7, 8, 9);
 		/*
 		 * Array.asList inicia uma lista com valores prédefinidos, 
