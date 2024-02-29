@@ -32,7 +32,7 @@ public class CalculadoraEmSi {
     		System.out.print("Digite a altura em metros: ");
             double altura = scanner.nextDouble();
     		pessoa1.setaltura(altura);
-    	
+    		 scanner.close();
     		// o mesmo se repete embaixo para altura!!
     		 //scanner.close(); importante usar isso para fechar o scanner, isso é muito bom!
     		 
