@@ -29,6 +29,7 @@ public class RetornaMain {
 
 		System.out.println("Digite um outro numero: ");
 		int var7 = scan.nextInt();
+		scan.close();
 
 		List<Integer> numeros = Arrays.asList(var1, var2, var3, var4, var5, var6, var7);
 		/*
