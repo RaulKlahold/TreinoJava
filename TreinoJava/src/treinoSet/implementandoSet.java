@@ -11,8 +11,11 @@ public class implementandoSet {
 	public static void main(String[] args) {
 		Set<Classepessoa> set = new HashSet<>();
 		Scanner scan = new Scanner(System.in);
-
-        set.add(new Classepessoa("Raul"));
+		
+        System.out.print("Digite um nome: ");
+        String nome1 = scan.next();
+        set.add(new Classepessoa(nome1));
+        
         set.add(new Classepessoa("Klahold"));
         set.add(new Classepessoa("Biscaro"));
 
