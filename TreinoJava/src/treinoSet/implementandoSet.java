@@ -16,7 +16,10 @@ public class implementandoSet {
         String nome1 = scan.next();
         set.add(new Classepessoa(nome1));
         
-        set.add(new Classepessoa("Klahold"));
+        System.out.print("Digite um outro nome: ");
+        String nome2 = scan.next();
+        set.add(new Classepessoa(nome2));
+        
         set.add(new Classepessoa("Biscaro"));
 
         Set<Classepessoa> ordena = new TreeSet<>(set);
