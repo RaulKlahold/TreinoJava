@@ -20,7 +20,9 @@ public class implementandoSet {
         String nome2 = scan.next();
         set.add(new Classepessoa(nome2));
         
-        set.add(new Classepessoa("Biscaro"));
+        System.out.print("Digite um terceiro nome: ");
+        String nome3 = scan.next();
+        set.add(new Classepessoa(nome3));
 
         Set<Classepessoa> ordena = new TreeSet<>(set);
         Iterator<Classepessoa> it = ordena.iterator();
