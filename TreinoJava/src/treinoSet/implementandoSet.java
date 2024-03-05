@@ -2,6 +2,7 @@ package treinoSet;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -9,10 +10,19 @@ public class implementandoSet {
 
 	public static void main(String[] args) {
 		Set<Classepessoa> set = new HashSet<>();
-
-        set.add(new Classepessoa("Raul"));
-        set.add(new Classepessoa("Klahold"));
-        set.add(new Classepessoa("Biscaro"));
+		Scanner scan = new Scanner(System.in);
+		
+        System.out.print("Digite um nome: ");
+        String nome1 = scan.next();
+        set.add(new Classepessoa(nome1));
+        
+        System.out.print("Digite um outro nome: ");
+        String nome2 = scan.next();
+        set.add(new Classepessoa(nome2));
+        
+        System.out.print("Digite um terceiro nome: ");
+        String nome3 = scan.next();
+        set.add(new Classepessoa(nome3));
 
         Set<Classepessoa> ordena = new TreeSet<>(set);
         Iterator<Classepessoa> it = ordena.iterator();
