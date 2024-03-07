@@ -14,6 +14,10 @@ public class QuadroUsuario {
 		
 		double divisao = numeroUm / numeroDois;
 		System.out.println("A divisão deu: "+divisao);
+		
+		//não executa e nem apresenta erro?
+		// sera que o eclipse n tem como executar esse tipo de interação com o usuario?
+		
 	}
 
 }
