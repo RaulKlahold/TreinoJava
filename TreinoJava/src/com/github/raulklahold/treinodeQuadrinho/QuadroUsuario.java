@@ -9,8 +9,8 @@ public class QuadroUsuario {
 		String numeroX = JOptionPane.showInputDialog("Qual é o seu primeiro numero?");
 		String numeroY = JOptionPane.showInputDialog("Qual é o seu segundo numero?");
 		
-		double numeroUm = Double.parseDouble(numero1);
-		double numeroDois = Double.parseDouble(numero2);
+		double numero1 = Double.parseDouble(numeroX);
+		double numero2 = Double.parseDouble(numeroY);
 		
 		double divisao = numeroUm / numeroDois;
 		System.out.println("A divisão deu: "+divisao);
