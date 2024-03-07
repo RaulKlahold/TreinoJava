@@ -12,8 +12,8 @@ public class QuadroUsuario {
 		double numeroUm = Double.parseDouble(numero1);
 		double numeroDois = Double.parseDouble(numero2);
 		
-		double divisão = numeroUm / numeroDois;
-		System.out.println();
+		double divisao = numeroUm / numeroDois;
+		System.out.println("A divisão deu: "+divisao);
 	}
 
 }
