@@ -6,17 +6,16 @@ public class QuadroUsuario {
 
 	public static void main(String[] args) {
 		
-		String numero1 = JOptionPane.showInputDialog("Qual é o seu primeiro numero?");
-		String numero2 = JOptionPane.showInputDialog("Qual é o seu segundo numero?");
+		String numeroX = JOptionPane.showInputDialog("Qual é o seu primeiro numero?");
+		String numeroY = JOptionPane.showInputDialog("Qual é o seu segundo numero?");
 		
-		double numeroUm = Double.parseDouble(numero1);
-		double numeroDois = Double.parseDouble(numero2);
+		double numero1 = Double.parseDouble(numeroX);
+		double numero2 = Double.parseDouble(numeroY);
 		
-		double divisao = numeroUm / numeroDois;
+		double divisao = numero1 / numero2;
 		System.out.println("A divisão deu: "+divisao);
 		
-		//não executa e nem apresenta erro?
-		// sera que o eclipse n tem como executar esse tipo de interação com o usuario?
+		
 		
 	}
 
