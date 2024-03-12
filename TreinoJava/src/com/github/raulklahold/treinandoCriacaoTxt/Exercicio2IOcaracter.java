@@ -14,6 +14,7 @@ public class Exercicio2IOcaracter {
 		
 	    File f = new File("recomendações.txt");
 	    BufferedWriter bw = new BufferedWriter(new FileWriter(f.getName()));
+	    // deu certoooooooo
 	    
 	    do {
 	    	bw.write(line);
