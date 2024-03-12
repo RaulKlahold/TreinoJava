@@ -30,4 +30,9 @@ public class Exercicio2IOcaracter {
 
 	    
 	}
-}
+
+
+public static void main(String[] args) throws IOException{
+	lerTecladoEscreverDocumento();
+	
+}}
