@@ -23,6 +23,10 @@ public class Exercicio2IOcaracter {
            }
 	    while(!(line.equalsIgnoreCase("fim")));
            
+	    System.out.printf("Arquivo %s foi criado com sucesso!", f.getName());
+	    
+	    scan.close();
+        bw.close();
 
 	    
 	}
