@@ -16,7 +16,14 @@ public class Exercicio2IOcaracter {
 	    BufferedWriter bw = new BufferedWriter(new FileWriter(f.getName()));
 	    
 	    do {
-	    	
-	    }
+	    	bw.write(line);
+	    	bw.newLine();
+            bw.flush();
+            line = scan.nextLine();
+           }
+	    while(!(line.equalsIgnoreCase("fim")));
+           
+
+	    
 	}
 }
