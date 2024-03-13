@@ -32,8 +32,11 @@ public class ExemploIoObjct {
 	       ois.close();
 	}
 	
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+        serealizacao();
+        desserializacao("Carro");
 
-}
+}}
 /*
 private String marca;
 private Integer VelocidadeMax;
