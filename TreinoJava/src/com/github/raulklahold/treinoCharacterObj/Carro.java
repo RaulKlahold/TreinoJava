@@ -1,7 +1,10 @@
 package com.github.raulklahold.treinoCharacterObj;
 
-public class Carro {
+import java.io.Serializable;
+
+public class Carro implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	private String marca;
 	private Integer VelocidadeMax;
 	private Integer ano;

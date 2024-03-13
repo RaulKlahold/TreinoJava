@@ -14,7 +14,24 @@ public class ExemploIoObjct {
 		oss.writeObject(carro);
 		System.out.printf("Arquivo %s criado com sucesso! Tamanho %d bytes.", f.getName(), f.length());
 		
+		oss.close();
 	}
+	
+	public static void desserializacao(String arquivo) throws IOException, ClassNotFoundException{
+		
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(arquivo));
+		Carro objetoCarro = (Carro) ois.readObject();
+		
+		   System.out.printf("\nMarca..................: %s\n", objetoCarro.getMarca());
+	       System.out.printf("Velocidade................: %d\n", objetoCarro.getVelocidadeMax());
+	       System.out.printf("Ano...................: %d\n", objetoCarro.getAno());
+	       System.out.printf("Cor.....................: %s\n", objetoCarro.getCor());
+	       System.out.println(objetoCarro);
+	       
+	       
+	       ois.close();
+	}
+	
 
 }
 /*
