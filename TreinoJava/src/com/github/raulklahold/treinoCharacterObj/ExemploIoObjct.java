@@ -2,6 +2,8 @@ package com.github.raulklahold.treinoCharacterObj;
 
 import java.io.*;
 
+import com.github.raulklahold.sistemaderestaurante.ExceptionNome;
+
 public class ExemploIoObjct {
 	
 	public static void serealizacao() throws IOException{
@@ -33,9 +35,8 @@ public class ExemploIoObjct {
 	}
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
-        serealizacao();
-        desserializacao("Carro");
-
+       serealizacao();
+	   desserializacao("Carro");
 }}
 /*
 private String marca;
