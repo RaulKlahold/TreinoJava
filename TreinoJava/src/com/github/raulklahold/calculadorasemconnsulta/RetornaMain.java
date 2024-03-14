@@ -1,10 +1,10 @@
 package com.github.raulklahold.calculadorasemconnsulta;
 
 import java.util.Scanner;
-
-public class RetornaMain {
-
+ class RetornaMain {
+    
 	public static void main(String[] args) {
+		try {
 		Scanner scan = new Scanner(System.in);
 		ColetarDados cal = new ColetarDados();
 		
@@ -19,6 +19,15 @@ public class RetornaMain {
 
        Double resultado = ExecutaFunction.soma(cal);
        System.out.println("O resultado deu: "+resultado);
-	}
+       
+	} catch(ArithmeticException j) {
 
-}
+		System.out.println("Erro ao realizar cálculo: não é possivel divisão por zero.");
+	} catch (NumberFormatException k) {
+		System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
+	} 
+		catch(Exception l) {
+			System.out.println("Erro ao realizar cálculo: Ocorreu um erro inesperado " + l.getMessage());
+		}}}
+	
+
