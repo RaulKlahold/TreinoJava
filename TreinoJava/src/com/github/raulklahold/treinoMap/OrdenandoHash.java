@@ -7,7 +7,7 @@ public class OrdenandoHash {
 
 			public static void main(String[] args) {
 				
-			
+			try {
 		        HashMap<Integer, String> mapaNomes = new HashMap<>();
 		        Scanner scan = new Scanner(System.in);
 		        
@@ -36,6 +36,7 @@ public class OrdenandoHash {
 
 		        for(Integer valor : mapaNomes.keySet()){
 		            System.out.println(valor + " " + mapaNomes.get(valor));
+		        }
 		        }
 		    }
 
