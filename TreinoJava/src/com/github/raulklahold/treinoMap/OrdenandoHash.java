@@ -7,7 +7,7 @@ public class OrdenandoHash {
 
 			public static void main(String[] args) {
 				
-			
+			try {
 		        HashMap<Integer, String> mapaNomes = new HashMap<>();
 		        Scanner scan = new Scanner(System.in);
 		        
@@ -36,7 +36,17 @@ public class OrdenandoHash {
 
 		        for(Integer valor : mapaNomes.keySet()){
 		            System.out.println(valor + " " + mapaNomes.get(valor));
-		        }
-		    }
+		        }}
+		        catch(ArithmeticException j) {
 
-}
+		    		System.out.println("Erro ao realizar cálculo: não é possivel divisão por zero.");
+		    	} catch (NumberFormatException k) {
+		    		System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
+		    	} 
+			catch(Exception l) {
+    			System.out.println("Erro ao realizar cálculo: Ocorreu um erro inesperado " + l.getMessage());
+    		}
+        
+		    
+
+}}
