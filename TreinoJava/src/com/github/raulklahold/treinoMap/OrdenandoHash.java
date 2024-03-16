@@ -40,12 +40,7 @@ public class OrdenandoHash {
 		        catch(ArithmeticException j) {
 
 		    		System.out.println("Erro ao realizar cálculo: não é possivel divisão por zero.");
-		    	} catch (NumberFormatException k) {
-		    		System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
-		    	} 
-		    		catch(Exception l) {
-		    			System.out.println("Erro ao realizar cálculo: Ocorreu um erro inesperado " + l.getMessage());
-		    		}
+		    	}
 		        
 		    
 
