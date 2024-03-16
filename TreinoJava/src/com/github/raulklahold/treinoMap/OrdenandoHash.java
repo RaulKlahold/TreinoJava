@@ -43,7 +43,10 @@ public class OrdenandoHash {
 		    	} catch (NumberFormatException k) {
 		    		System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
 		    	} 
-		    		
+			catch(Exception l) {
+    			System.out.println("Erro ao realizar cálculo: Ocorreu um erro inesperado " + l.getMessage());
+    		}
+        
 		    
 
 }}
