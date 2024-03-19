@@ -18,8 +18,9 @@ public class RetornoDaMain {
 	    dados.setNumero2(secondN);
 	    
 	    double resultante = CalculadoraDeRelação.Relacao(dados);
-	    System.out.println();
-	  
+	    System.out.println(resultante);
+	    
+	  scan.close();
 	}
 
 }
