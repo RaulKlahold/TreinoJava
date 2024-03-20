@@ -6,8 +6,13 @@ public class CalculadoraDeRelação {
 		double primeiraVariavel = ColetarDados.getNumero1();
 		double segundaVariavel = ColetarDados.getNumero2();
 		
-		 return ((primeiraVariavel - segundaVariavel)/ segundaVariavel) * 100; 
+		if(primeiraVariavel > 0 && segundaVariavel > 0 ) {
 		
+		 return ((primeiraVariavel - segundaVariavel)/ segundaVariavel) * 100; 
+		}
+		else {
+			
+		}
 		
 	}
       
