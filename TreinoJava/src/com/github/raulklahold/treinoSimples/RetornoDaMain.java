@@ -21,7 +21,7 @@ public class RetornoDaMain {
 		} catch (ExceptionPersonalizada e) {
 			System.out.println(e.getMessage());
 		}
-		
+		scan.close();
 	}
 
 }
