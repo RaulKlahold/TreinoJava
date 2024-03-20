@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RetornoDaMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ExceptionPersonalizada {
 		ColetarDados dados = new ColetarDados();
 		Scanner scan = new Scanner(System.in);
 		
