@@ -16,10 +16,13 @@ public class RetornoDaMain {
 	    System.out.println("Digite um numero final");
 	    double secondN = scan.nextDouble();
 	    dados.setNumero2(secondN);
-	    
+	    try {
 	    double resultante = CalculadoraDeRelação.Relacao(dados);
 	    System.out.println(resultante);
-	    
+	    }
+	    catch(ExceptionPersonalizada e){
+	    	System.out.println(e.getMessage());
+	    }
 	  scan.close();
 	}
 
