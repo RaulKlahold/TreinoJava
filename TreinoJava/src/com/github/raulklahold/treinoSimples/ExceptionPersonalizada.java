@@ -3,7 +3,7 @@ package com.github.raulklahold.treinoSimples;
 public class ExceptionPersonalizada extends Exception {
 	
 	public ExceptionPersonalizada() {
-		super("O nome precisa ter no minimo 3 caracteres: ");
+		super("O numero precisa ser maior que 0! ");
 	}
 
 	public ExceptionPersonalizada(String message) {
