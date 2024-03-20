@@ -1,14 +1,19 @@
 package com.github.raulklahold.treinoSimples;
 
 public class CalculadoraDeRelação {
-	public static double Relacao(ColetarDados ColetarDados){
-		
+	public static double Relacao(ColetarDados ColetarDados) throws ExceptionPersonalizada {
+
 		double primeiraVariavel = ColetarDados.getNumero1();
 		double segundaVariavel = ColetarDados.getNumero2();
-		
-		 return ((primeiraVariavel - segundaVariavel)/ segundaVariavel) * 100; 
-		
-		
+
+		if (primeiraVariavel > 0 && segundaVariavel > 0) {
+
+			return ((primeiraVariavel - segundaVariavel) / segundaVariavel) * 100;
+		} else {
+			throw new ExceptionPersonalizada();
+
+		}
+
 	}
-      
+
 }
