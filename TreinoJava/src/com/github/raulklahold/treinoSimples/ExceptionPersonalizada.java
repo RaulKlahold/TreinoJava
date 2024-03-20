@@ -1,5 +1,6 @@
 package com.github.raulklahold.treinoSimples;
 
+@SuppressWarnings("serial")
 public class ExceptionPersonalizada extends Exception {
 	
 	public ExceptionPersonalizada() {
