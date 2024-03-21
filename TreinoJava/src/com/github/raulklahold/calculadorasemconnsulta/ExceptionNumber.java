@@ -1,6 +1,6 @@
 package com.github.raulklahold.calculadorasemconnsulta;
 
-public class ExceptionNumber {
+public class ExceptionNumber extends Exception {
 	
 	public ExceptionNumber() {
 		super("O numero precisa ser maior que 0! ");
