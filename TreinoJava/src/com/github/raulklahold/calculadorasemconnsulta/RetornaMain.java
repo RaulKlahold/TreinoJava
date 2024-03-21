@@ -3,8 +3,8 @@ package com.github.raulklahold.calculadorasemconnsulta;
 import java.util.Scanner;
  class RetornaMain {
     
-	public static void main(String[] args) {
-		try {
+	public static void main(String[] args) throws ExceptionNumber {
+	
 		Scanner scan = new Scanner(System.in);
 		ColetarDados cal = new ColetarDados();
 		
@@ -20,14 +20,7 @@ import java.util.Scanner;
        Double resultado = ExecutaFunction.soma(cal);
        System.out.println("O resultado deu: "+resultado);
        
-	} catch(ArithmeticException j) {
-
-		System.out.println("Erro ao realizar cálculo: não é possivel divisão por zero.");
-	} catch (NumberFormatException k) {
-		System.out.println("Erro ao realizar cálculo: Por favor, insira um número válido.");
-	} 
-		catch(Exception l) {
-			System.out.println("Erro ao realizar cálculo: Ocorreu um erro inesperado " + l.getMessage());
-		}}}
+	
+		}}
 	
 
