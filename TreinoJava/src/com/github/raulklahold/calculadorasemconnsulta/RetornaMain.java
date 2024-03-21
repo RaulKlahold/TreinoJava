@@ -16,10 +16,13 @@ import java.util.Scanner;
 		double var2 = scan.nextDouble();
 		cal.setNum2(var2);
 		scan.close();
-
+		
+       try {
        Double resultado = ExecutaFunction.soma(cal);
        System.out.println("O resultado deu: "+resultado);
-       
+       } catch (ExceptionNumber k) {
+    	   System.out.println(k.getMessage());
+       }
 	
 		}}
 	
