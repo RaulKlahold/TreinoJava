@@ -1,5 +1,6 @@
 package com.github.raulklahold.calculadorasemconnsulta;
 
+@SuppressWarnings("serial")
 public class ExceptionNumber extends Exception {
 	
 	public ExceptionNumber() {
